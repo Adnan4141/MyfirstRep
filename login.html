@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+	
+	<style>
+		
+	body {
+    font-family: Arial, sans-serif;
+    background-color: #AD5052;
+    margin: 0;
+}
+
+	
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+	
+}
+
+.form-box {
+    background-color: #454BBD;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    width: 300px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Color the forms */
+.container {
+    background-color: #f2f2f2;
+}
+
+.form-box {
+    background-color: #ffffff;
+}
+
+input {
+    background-color: #f9f9f9;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Add an icon to the button */
+button[type="submit"] {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+button[type="submit"]::before {
+    content: "\f090";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 5px;
+}
+
+/* Center the login and register texts */
+.form-box h2 {
+    text-align: center;
+}
+
+		.rounded-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+	</style>
+</head>
+	
+<body>
+    <div class="container">
+        <div class="form-box">
+			 <img src="https://cdn5.vectorstock.com/i/1000x1000/96/89/man-icon-manager-symbol-in-flat-style-round-vector-9469689.jpg" alt="not found" class="rounded-image">
+            <h2>Login</h2>
+            <form id="login-form" action="#" method="POST">
+                <label for="login-username">Username</label>
+                <input type="text" id="login-username" name="login-username" required>
+                
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" name="login-password" required>
+                
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div class="form-box">
+            <h2>Register</h2>
+            <form id="register-form" action="#" method="POST">
+                <label for="register-name">Name</label>
+                <input type="text" id="register-name" name="register-name" required>
+				
+				 <label for="register-username">Userame</label>
+                <input type="text" id="register-username" name="register-username" required>
+                
+                <label for="register-email">Email</label>
+                <input type="email" id="register-email" name="register-email" required>
+                
+                <label for="register-password">Password</label>
+                <input type="password" id="register-password" name="register-password" required>
+                
+				 <label for="register-password">Confirm Password</label>
+                <input type="password" id="register-password2" name="register-password2" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
